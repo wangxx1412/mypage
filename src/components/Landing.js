@@ -4,6 +4,7 @@ import octoreco from "../images/octoreco.png";
 import todograph from "../images/todo.png";
 import tetris from "../images/tetris.png";
 import laravel from "../images/laravel.png";
+import portfolio from "../images/portfolio.png";
 
 class Landing extends React.Component {
   render() {
@@ -13,12 +14,14 @@ class Landing extends React.Component {
           <Container>
             <div className="title">
               <div className="name">Xiaoxuan Wang</div>
-              <p className="subtitle">This is a portfolio of my works.</p>
+              <div className="subtitle">
+                <p>This is a portfolio of my works.</p>
+              </div>
             </div>
           </Container>
         </Jumbotron>
 
-        <Container style={{ marginTop: "50px" }}>
+        <Container style={{ marginTop: "50px" }} className="works">
           <Row>
             <Col className="col">
               <div>
@@ -37,7 +40,7 @@ class Landing extends React.Component {
                 </a>
               </div>
               <div className="description">
-                A Todo app with Auth based on React and GraphQL
+                Todo app with Auth by React and GraphQL
               </div>
             </Col>
           </Row>
@@ -51,7 +54,7 @@ class Landing extends React.Component {
               <div className="description">
                 Tetris game by react-hooks following{" "}
                 <a href="https://www.youtube.com/watch?v=ZGOaCxX8HIU">
-                  Tutorial
+                  <i>Tutorial</i>
                 </a>
               </div>
             </Col>
@@ -62,12 +65,25 @@ class Landing extends React.Component {
                 </a>
               </div>
               <div className="description">
-                Instagram clone based on Laravel following{" "}
+                (Building) Instagram clone on Laravel following{" "}
                 <a href="https://www.youtube.com/watch?v=ImtZ5yENzgE&t=5734s">
-                  Tutorial
+                  <i>Tutorial</i>
                 </a>
               </div>
             </Col>
+          </Row>
+          <Row>
+            <Col className="col">
+              <div>
+                <a href="https://wangxxportfolio.herokuapp.com/">
+                  <img src={portfolio} className="image" alt="portfolio" />
+                </a>
+              </div>
+              <div className="description">
+                My legacy portfolio and I still like it.
+              </div>
+            </Col>
+            <Col></Col>
           </Row>
         </Container>
       </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 class Header extends React.Component {
   render() {
@@ -14,14 +14,37 @@ class Header extends React.Component {
               myPage
             </Nav>
             <Nav className="mr-auto"></Nav>
+            <Nav.Link href="https://www.linkedin.com/in/xiaoxuan-wang-449a5998/">
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                size="2x"
+                className="icons"
+              />{" "}
+            </Nav.Link>
             <Nav.Link href="https://github.com/wangxx1412">
               <FontAwesomeIcon icon={faGithub} size="2x" className="icons" />{" "}
             </Nav.Link>
             <Nav.Link
-              href="mailto: xiaoxuanwang28@gmail.com"
-              className="mr-sm-2"
+              href="https://drive.google.com/file/d/1XCY-OvDPLs_BhHfaVV92Kh_77iBFe_aU/view?usp=sharing"
+              className="nav-resume"
             >
-              <FontAwesomeIcon icon={faEnvelope} size="2x" className="icons" />
+              <FontAwesomeIcon
+                icon={faFile}
+                size="2x"
+                className="icons resume-icon"
+              />{" "}
+              <div className="resume-hidden-text">Resume</div>
+            </Nav.Link>
+            <Nav.Link
+              href="mailto: xiaoxuanwang28@gmail.com"
+              className="mr-sm-2 nav-email"
+            >
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                size="2x"
+                className="icons email-icon"
+              />
+              <div className="email-hidden-text">Email</div>
             </Nav.Link>
           </Container>
         </Navbar>
