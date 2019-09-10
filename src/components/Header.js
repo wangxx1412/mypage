@@ -1,19 +1,29 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class Header extends React.Component {
   render() {
     return (
       <>
-        <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="#home">myPage</Navbar.Brand>
-          <Nav className="mr-auto"></Nav>
-          <Nav>
-            <Nav.Link href="#features">Resume</Nav.Link>
-            <Nav.Link href="#pricing" className="mr-sm-2">
-              Email
+        <Navbar expand="lg" className="header">
+          <Container>
+            <Nav href="#home" className="logo">
+              myPage
+            </Nav>
+            <Nav className="mr-auto"></Nav>
+            <Nav.Link href="https://github.com/wangxx1412">
+              <FontAwesomeIcon icon={faGithub} size="2x" className="icons" />{" "}
             </Nav.Link>
-          </Nav>
+            <Nav.Link
+              href="mailto: xiaoxuanwang28@gmail.com"
+              className="mr-sm-2"
+            >
+              <FontAwesomeIcon icon={faEnvelope} size="2x" className="icons" />
+            </Nav.Link>
+          </Container>
         </Navbar>
       </>
     );
