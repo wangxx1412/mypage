@@ -15,7 +15,7 @@ class Landing extends React.Component {
             <div className="title">
               <div className="name">Xiaoxuan Wang</div>
               <div className="subtitle">
-                <p>This is a portfolio of my works.</p>
+                <p>Seeking Junior Web developer/Intern position</p>
               </div>
             </div>
           </Container>
@@ -35,7 +35,7 @@ class Landing extends React.Component {
             </Col>
             <Col className="col">
               <div>
-                <a href="https://todographql.herokuapp.com/">
+                <a href="http://todo-graphql-dev.us-west-2.elasticbeanstalk.com/">
                   <img src={todograph} className="image" alt="todographql" />
                 </a>
               </div>
