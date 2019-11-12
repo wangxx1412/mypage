@@ -3,7 +3,8 @@ import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import octoreco from "../images/octoreco.png";
 import todograph from "../images/todo.png";
 import tetris from "../images/tetris.png";
-import laravel from "../images/laravel.png";
+//import laravel from "../images/laravel.png";
+import travelsite from "../images/travelsite.png";
 import portfolio from "../images/portfolio.png";
 
 class Landing extends React.Component {
@@ -35,12 +36,12 @@ class Landing extends React.Component {
             </Col>
             <Col className="col">
               <div>
-                <a href="http://todo-graphql-dev.us-west-2.elasticbeanstalk.com/">
-                  <img src={todograph} className="image" alt="todographql" />
+                <a href="https://wangxxportfolio.herokuapp.com/">
+                  <img src={portfolio} className="image" alt="portfolio" />
                 </a>
               </div>
               <div className="description">
-                Todo app with Auth by React and GraphQL
+                A finely designed personal page.
               </div>
             </Col>
           </Row>
@@ -51,14 +52,9 @@ class Landing extends React.Component {
                   <img src={tetris} className="image" alt="tetris" />
                 </a>
               </div>
-              <div className="description">
-                Tetris game by react-hooks following{" "}
-                <a href="https://www.youtube.com/watch?v=ZGOaCxX8HIU">
-                  <i>Tutorial</i>
-                </a>
-              </div>
+              <div className="description">Tetris game by react-hooks</div>
             </Col>
-            <Col className="col">
+            {/* <Col className="col">
               <div>
                 <a href="/">
                   <img src={laravel} className="image" alt="laravel" />
@@ -70,17 +66,27 @@ class Landing extends React.Component {
                   <i>Tutorial</i>
                 </a>
               </div>
+            </Col> */}
+            <Col className="col">
+              <div>
+                <a href="https://wangxx1412.github.io/travel-site/">
+                  <img src={travelsite} className="image" alt="travelsite" />
+                </a>
+              </div>
+              <div className="description">
+                A nice responsive travel site demo.
+              </div>
             </Col>
           </Row>
           <Row>
             <Col className="col">
               <div>
-                <a href="https://wangxxportfolio.herokuapp.com/">
-                  <img src={portfolio} className="image" alt="portfolio" />
+                <a href="http://todo-graphql-dev.us-west-2.elasticbeanstalk.com/">
+                  <img src={todograph} className="image" alt="todographql" />
                 </a>
               </div>
               <div className="description">
-                My legacy portfolio and I still like it.
+                Todo app with Auth by React and GraphQL
               </div>
             </Col>
             <Col></Col>
