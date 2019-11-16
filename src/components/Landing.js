@@ -81,7 +81,7 @@ class Landing extends React.Component {
           <Row>
             <Col className="col">
               <div>
-                <a href="http://todo-graphql-dev.us-west-2.elasticbeanstalk.com/">
+                <a href="https://todographql.herokuapp.com/">
                   <img src={todograph} className="image" alt="todographql" />
                 </a>
               </div>
