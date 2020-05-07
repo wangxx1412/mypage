@@ -3,9 +3,11 @@ import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import octoreco from "../images/octoreco.png";
 import todograph from "../images/todo.png";
 import tetris from "../images/tetris.png";
-//import laravel from "../images/laravel.png";
 import travelsite from "../images/travelsite.png";
 import portfolio from "../images/portfolio.png";
+import yumeek from "../images/yumeek.png";
+import scheduler from "../images/scheduler.png";
+import jungle from "../images/jungle.png";
 
 class Landing extends React.Component {
   render() {
@@ -23,6 +25,29 @@ class Landing extends React.Component {
         </Jumbotron>
 
         <Container style={{ marginTop: "50px" }} className="works">
+          <Row>
+            <Col className="col">
+              <div>
+                <a href="https://github.com/wangxx1412/yumeek">
+                  <img src={yumeek} className="image" alt="yumeek" />
+                </a>
+              </div>
+              <div className="description">
+                Week meal plan project base on React, Ruby on Rails and
+                Postgresql
+              </div>
+            </Col>
+            <Col className="col">
+              <div>
+                <a href="https://fervent-bell-b3a7b7.netlify.app">
+                  <img src={scheduler} className="image" alt="scheduler" />
+                </a>
+              </div>
+              <div className="description">
+                React app for Scheduling a interview
+              </div>
+            </Col>
+          </Row>
           <Row>
             <Col className="col">
               <div>
@@ -48,34 +73,21 @@ class Landing extends React.Component {
           <Row>
             <Col className="col">
               <div>
+                <a href="https://github.com/wangxx1412/jungle-rails">
+                  <img src={jungle} className="image" alt="jungle" />
+                </a>
+              </div>
+              <div className="description">
+                Full-stack shopping app on Ruby on Rails
+              </div>
+            </Col>
+            <Col className="col">
+              <div>
                 <a href="https://reacthookstetris.herokuapp.com/">
                   <img src={tetris} className="image" alt="tetris" />
                 </a>
               </div>
               <div className="description">Tetris game by react-hooks</div>
-            </Col>
-            {/* <Col className="col">
-              <div>
-                <a href="/">
-                  <img src={laravel} className="image" alt="laravel" />
-                </a>
-              </div>
-              <div className="description">
-                (Building) Instagram clone on Laravel following{" "}
-                <a href="https://www.youtube.com/watch?v=ImtZ5yENzgE&t=5734s">
-                  <i>Tutorial</i>
-                </a>
-              </div>
-            </Col> */}
-            <Col className="col">
-              <div>
-                <a href="https://wangxx1412.github.io/travel-site/">
-                  <img src={travelsite} className="image" alt="travelsite" />
-                </a>
-              </div>
-              <div className="description">
-                A nice responsive travel site demo.
-              </div>
             </Col>
           </Row>
           <Row>
@@ -89,7 +101,16 @@ class Landing extends React.Component {
                 Todo app with Auth by React and GraphQL
               </div>
             </Col>
-            <Col></Col>
+            <Col className="col">
+              <div>
+                <a href="https://wangxx1412.github.io/travel-site/">
+                  <img src={travelsite} className="image" alt="travelsite" />
+                </a>
+              </div>
+              <div className="description">
+                A nice responsive travel site demo.
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>

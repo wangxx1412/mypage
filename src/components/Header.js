@@ -25,7 +25,7 @@ class Header extends React.Component {
               <FontAwesomeIcon icon={faGithub} size="2x" className="icons" />{" "}
             </Nav.Link>
             <Nav.Link
-              href="https://drive.google.com/open?id=1oMlU62wf5H1QhVh9teN48uMPScR2nTXp"
+              href="https://www.canva.com/design/DADq9IMQWZk/I3YRF6He59SL2h_Og-ugdA/view?utm_content=DADq9IMQWZk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
               className="nav-resume"
             >
               <FontAwesomeIcon
